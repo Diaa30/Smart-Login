@@ -3,7 +3,7 @@ let signIn = document.querySelector("#signIn");
 let logOut = document.querySelector("#logOut");
 
 signIn?.addEventListener("click", function () {
-  window.location.href = "Login.html";
+  window.location.href = "index.html";
 });
 let nameSignUp = document.querySelector("#nameSignUp");
 let emailSignUp = document.querySelector("#emailSignUp");
@@ -121,5 +121,5 @@ if (localStorage.getItem("currentUser") != null) {
 }
 /////home
 logOut?.addEventListener("click", function () {
-  window.location.href = "Login.html";
+  window.location.href = "index.html";
 });
