@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Titillium+Web:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINKS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="box-container mt-5 mx-auto py-4 px-5">
+      <div class="container text-center">
+        <h1 class="my-3">Smart Login System</h1>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control mb-3 bg-grey p-2"
+            placeholder="Enter Your name"
+            id="nameSignUp"
+          />
+          <input
+            type="email"
+            class="form-control mb-3 bg-grey p-2"
+            placeholder="Enter Your Email"
+            id="emailSignUp"
+          />
+          <input
+            type="password"
+            class="form-control mb-4 bg-grey p-2"
+            placeholder="Enter Your Password"
+            id="passSignUp"
+          />
+          <p class="success d-none mb-4">Success</p>
+          <p class="required d-none mb-4">All inputs is required</p>
+          <p class="email-exist d-none mb-4">Email Already Exist</p>
+          <button id="signUpBtn" class="btn btn-info w-100 bg-grey mb-3">
+            Sign Up
+          </button>
+        </div>
+        <p class="text-white">
+          Don’t have an account? <a href="#" id="signIn" class="">Sign in</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

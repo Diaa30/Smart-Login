@@ -1,0 +1,89 @@
+:root {
+  --grey: #24353f;
+  --info: #17a2b8;
+  --lightgrey: #ced4da;
+  --white_color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--grey);
+  font-family: "Titillium Web", sans-serif;
+  /* font-family: "Titillium Web", sans-serif; */
+}
+
+h1 {
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--info);
+}
+
+.bg-grey {
+  background-color: var(--grey);
+}
+.box-container {
+  box-shadow: 0px 0px 15px 15px rgb(12, 17, 20, 0.5);
+  width: 55%;
+}
+.form-control {
+  color: var(--lightgrey);
+  border: 1px solid var(--lightgrey);
+}
+input::placeholder {
+  color: var(--lightgrey) !important;
+}
+.form-control:focus {
+  background-color: var(--grey);
+  border: 1px solid var(--info);
+  box-shadow: none;
+  color: var(--lightgrey);
+}
+.btn {
+  transition: all 0.3;
+  -webkit-transition: all 0.3;
+  -moz-transition: all 0.3;
+  -ms-transition: all 0.3;
+  -o-transition: all 0.3;
+}
+.btn-info {
+  color: var(--info);
+  border: 1px solid var(--info);
+}
+.btn-info:hover {
+  background-color: var(--info);
+  border: 1px solid transparent;
+
+  color: var(--white_color);
+}
+a {
+  color: var(--white_color);
+  text-decoration: none;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+.success {
+  color: rgb(49, 175, 49);
+}
+.required,
+.email-exist,
+.incorrectMess {
+  color: rgb(143, 13, 13);
+}
+.btn-home {
+  color: var(--lightgrey);
+}
+.btn-home:hover {
+  color: var(--white_color);
+  text-decoration: none;
+}
