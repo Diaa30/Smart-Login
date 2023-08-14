@@ -98,9 +98,12 @@ function registration() {
 function requiredMessage() {
   if (emailSignIn.value == "" || passSignIn.value == "") {
     required.classList.replace("d-none", "d-block");
+    incorrectMess.classList.replace("d-none", "d-block");
+
     return false;
   } else {
     required.classList.replace("d-block", "d-none");
+    incorrectMess.classList.replace("d-block", "d-none");
     return true;
   }
 }
