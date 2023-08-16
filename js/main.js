@@ -110,6 +110,9 @@ function requiredMessage() {
 loginBtn?.addEventListener("click", function () {
   if (registration() && requiredMessage()) {
     window.location.href = "home.html";
+    incorrectMess.classList.replace("d-block", "d-none");
+  } else {
+    incorrectMess.classList.replace("d-none", "d-block");
   }
 });
 
